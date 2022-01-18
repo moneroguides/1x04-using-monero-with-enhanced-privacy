@@ -143,7 +143,7 @@ Adding a username and password can grant you a little peace of mind and helps to
 
 In the last few videos we covered a lot. It will take some time and practice for this information to be digested in it's entirety.
 
-Please use these videos as a reference point for any further learning. The complete scripts for these videos are hosted on the [Monero Guides](https://www.moneroguides.org) website and are packed full of links to further reading and learning which we've point to throughout. For addition reading, both (Zero to Monero)[https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf] and [Mastering Monero](https://masteringmonero.com/) offer a great level of detail and are very valuable resources.
+Please use these videos as a reference point for any further learning. The complete scripts for these videos are hosted on the [Monero Guides](https://www.moneroguides.org) website and are packed full of links to further reading and learning which we've point to throughout. For addition reading, both [Zero to Monero](https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf) and [Mastering Monero](https://masteringmonero.com/) offer a great level of detail and are very valuable resources.
 
 We want to close by thanking you for staying tuned. We hope you now have the tools to continue your journey with Monero.
 
