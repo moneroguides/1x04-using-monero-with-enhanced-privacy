@@ -18,7 +18,7 @@ Let's get into it.
 
 ### COIN CONTROL
 
-To begin we want continue on from the last video and introduce some privacy enhancing account practices. We're going to start by introducing a new term: **ring signatures**. Ring signatures are one of the key features of the Monero ecosystem which aims to anonymise our transactions. Take a look at the [video](https://www.youtube.com/watch?v=zHN_B_H_fCs) posted by the Monero community to learn more.
+To begin we want continue on from the last video and introduce some privacy enhancing account practices. We're going to start by introducing a new term: **ring signatures**. Ring signatures are one of the key features of the Monero ecosystem which aims to anonymise our transactions. To learn more have a look at the [Moneropedia entry](https://www.getmonero.org/resources/moneropedia/ringsignatures.html)
 
 Ring signatures aren't perfect as they only provide plausible deniability. Attacks can exist where two or more colluding parties attempt to learn information about someone they transact with. They can do so by tracing transaction graphs and performing statistical tests. This type of attack is especially effective against those who engage in repeated, uniform transactions and also provide personally identifiable information.
 
