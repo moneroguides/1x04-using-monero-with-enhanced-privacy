@@ -135,7 +135,7 @@ Click "OK" when you're done and then double click on the node to connect to it. 
 
 As we have seen, it is possible to secure your RPC server with usernames and passwords. With this in place only those with a given username and password will hence be able to interact with the server. To enable this, we need to head back to our `bitmonero.conf` once more.
 
-The flag for adding a username and password pair is as follows: `rpc-login=**username**:**password**`. This flag, along with many others can be found via the [Monerodocs webstie](https://monerodocs.org/interacting/monerod-reference/) which you may remember from the second video. With that line added, you should no restart your node for the settings to take effect.
+The flag for adding a username and password pair is as follows: `rpc-login=username:password`. This flag, along with many others can be found via the [Monerodocs webstie](https://monerodocs.org/interacting/monerod-reference/) which you may remember from the second video. With that line added, you should no restart your node for the settings to take effect.
 
 Adding a username and password can grant you a little peace of mind and helps to prevent others from abusing your server.
 
