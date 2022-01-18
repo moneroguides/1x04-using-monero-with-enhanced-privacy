@@ -102,8 +102,8 @@ With Tor installed it's rather simple to set up a hidden service. This first thi
 
 Using your favourite editor you need to add a few lines, which will define your new service. I'm going to use [vim](https://www.vim.org/) and to enter the editing window I will use the command `sudo vim /etc/tor/torrc`, once that's done I will add the following lines:
 
-	`HiddenServiceDir /var/lib/tor/monero-service/`
-	`HiddenServicePort 18081 127.0.0.1:18081`
+	HiddenServiceDir /var/lib/tor/monero-service/
+	HiddenServicePort 18081 127.0.0.1:18081
 
 Take note of the fact that the option **HiddenServicePort** is a redirect of the already existing service on your host PC. If you have changed the default port for RPC's then this line needs to change to reflect that.
 
