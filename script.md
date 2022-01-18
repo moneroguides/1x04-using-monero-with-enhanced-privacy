@@ -83,7 +83,7 @@ As you can see two items have appeared under "ACTIVE PORTS". Now that we have th
 
 Finally, you need to add rules in your machines and routers firewall. Please follow the instructions from the second video; **Setting up your own node**.
 
-To connect to your node from outside your LAN your wallet software will require the port for RPC's and the IP address. You should already know your port number; to find our new IP address we can use Mullvads ["check" tool](https://mullvad.net/en/check/). This can be found by selecting "Check for leaks" at the top of Mullvads web page, once there select the drop down menu with head **Using Mullvad VPN** to reveal your external IP address.
+To connect to your node from outside your LAN your wallet software will require the port for RPC's and the IP address. You should already know your port number; to find our new IP address we can use Mullvads ["check" tool](https://mullvad.net/en/check/). This can be found by selecting "Check for leaks" at the top of Mullvads web page, once there, select the drop down menu with heading **Using Mullvad VPN** to reveal your external IP address.
 
 Be warned, depending on your configuration, these IP address may not be static and can change without warning. Be sure to check again if you are ever unable to access your node. In order to see how to add your node to Monerujo or Feather, please move on the the section called **Adding nodes to your wallet software**. If you're a Linux user, stay tuned for the Darknet approach.
 
