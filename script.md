@@ -53,7 +53,7 @@ For those of you who followed the previous videos and were not able to host your
 
 In the next sections we'll be demonstrating how to configure our nodes to accept RPC's from outside our LAN. Firstly using Clearnet and then Darknet, which is aimed at Linux users only.
 
-We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any.
+We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any. If you have any concerns, or problems with port forwarding, we would recomend you aim to host your node over Tor, which does not require you to do this.
 
 ### CONFIGURING YOUR NODE - CLEARNET
 
