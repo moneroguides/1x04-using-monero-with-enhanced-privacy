@@ -44,7 +44,7 @@ If your state has banned the use of Monero or you don't trust your ISP, you may 
 
 Although we are primarily focused on privacy, there may be technical reasons for using a VPN or Tor. For example, your ISP may limit the use of port forwarding or you may not be able to access your router in an administrative capacity.
 
-Before we continue, it would be good to introduce two terms which you may not have come across before. They are **[Clearnet](https://en.wikipedia.org/wiki/Clearnet_(networking)** and **[Darknet](https://en.wikipedia.org/wiki/Darknet)**. These terms have a well established history and can be be simply summarised in the following ways:
+Before we continue, it would be good to introduce two terms which you may not have come across before. They are [Clearnet](https://en.wikipedia.org/wiki/Clearnet_networking) and [Darknet](https://en.wikipedia.org/wiki/Darknet). These terms have a well established history and can be be simply summarised in the following ways:
 
 * Clearnet - Publicly accessible Internet 
 * Darknet - Internet that can only be accessed with specific software, configurations, or authorisation,
@@ -65,7 +65,7 @@ The rest of this section covers the use of VPN's, and specifically Mullvad, alth
 
 Using a VPN is equivalent to changing your ISP and depending on the service, you may gain some privacy enhancing features. In the last video we bought a subscription to [Mullvad](https://mullvad.net), a privacy focused VPN provider based in Sweden. We specifically chose Mullvad because we are able to configure multiple ports for use with our daemons and we were able to maintain some privacy when buying the subscription. 
 
-Let's get started by heading over the Mullvads web page and selecting [creating and account](https://mullvad.net/en/account/#/create/).
+Let's get started by heading over the Mullvads web page and selecting "[creating and account](https://mullvad.net/en/account/#/create/)".
 
 Unlike services from Nord et al. which require you to provide email addresses and other personally identifying details, Mullvad uses account numbers. To generate an account number we should simply click on the button provided.
 
