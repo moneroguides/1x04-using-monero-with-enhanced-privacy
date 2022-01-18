@@ -18,7 +18,7 @@ Let's get into it.
 
 ### COIN CONTROL
 
-To begin we want continue on from the last video and introduce some privacy enhancing account practices. We're going to start by introducing a new term: **ring signatures**. [Ring signatures](https://www.youtube.com/watch?v=zHN_B_H_fCs) are one of the key features of the Monero ecosystem which aims to anonymise our transactions. Take a look at the video posted by the Monero community to learn more.
+To begin we want continue on from the last video and introduce some privacy enhancing account practices. We're going to start by introducing a new term: **ring signatures**. Ring signatures are one of the key features of the Monero ecosystem which aims to anonymise our transactions. Take a look at the [video](https://www.youtube.com/watch?v=zHN_B_H_fCs) posted by the Monero community to learn more.
 
 Ring signatures aren't perfect as they only provide plausible deniability. Attacks can exist where two or more colluding parties attempt to learn information about someone they transact with. They can do so by tracing transaction graphs and performing statistical tests. This type of attack is especially effective against those who engage in repeated, uniform transactions and also provide personally identifiable information.
 
@@ -143,9 +143,9 @@ Adding a username and password can grant you a little peace of mind and helps to
 
 In the last few videos we covered a lot. It will take some time and practice for this information to be digested in it's entirety.
 
-Please use these videos as a reference point for any further learning. The complete scripts for these videos are hosted on the [Monero Guides](https://www.moneroguides.org) website and are packed full of links to further reading and learning which we've point to throughout. For addition reading, both [Zero to Monero](https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf) and [Mastering Monero](https://masteringmonero.com/) offer a great level of detail and are very valuable resources.
+Please use these videos as a reference point for any further learning. The complete scripts for these videos are hosted on the [Monero Guides](https://www.moneroguides.org) website and are packed full of links to further reading and learning which we've point to throughout. For additional reading, both [Zero to Monero](https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf) and [Mastering Monero](https://masteringmonero.com/) offer a great level of detail and are very valuable resources.
 
-We want to close by thanking you for staying tuned. We hope you now have the tools to continue your journey with Monero.
+We want to close by thanking you for staying tuned. We hope you now have the tools to both start and continue your journey with Monero.
 
 Goodbye for now
 
