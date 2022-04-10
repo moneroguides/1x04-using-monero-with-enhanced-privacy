@@ -70,11 +70,11 @@ You will then need to discover your external IP address, which can most easily b
 
 Using a VPN is equivalent to changing your ISP and depending on the service, you may gain some privacy enhancing features. In the last video we bought a subscription to [Mullvad](https://mullvad.net), a privacy focused VPN provider based in Sweden. We specifically chose Mullvad because we are able to configure multiple ports for use with our daemons and we were able to maintain some privacy when buying the subscription. 
 
-Let's get started by heading over the Mullvads web page and selecting "[creating and account](https://mullvad.net/en/account/#/create/)".
+Let's get started by heading over the Mullvads web page and selecting "[Get started](https://mullvad.net/en/account/#/create/)".
 
 Unlike services from Nord et al. which require you to provide email addresses and other personally identifying details, Mullvad uses account numbers. To generate an account number we should simply click on the button provided.
 
-Now that we have our number, it's time to add some credit to our account. As we already purchased some credit we can select the **voucher** option and enter the details there. The final thing to do is download the appropriate software for your OS and assign ports to your account. Don't forget to verify your donwloads, Mullvads public key along with their own guide can be found through the following [link](https://mullvad.net/en/help/verifying-signatures/).
+Now that we have our number, it's time to add some credit to our account. As we already purchased some credit we can select the **voucher** option and enter the details there. The final thing to do is download the appropriate software for your OS and assign ports to your account. Don't forget to verify your donwloads, Mullvads public key along with their own guide can be found through the following [link](https://mullvad.net/en/help/verifying-signatures/) or by clicking "what is this?" on the downloads page.
 
 As a VPN user the ports you have access to will be limited. The default ports for P2P connections (18080) and RPC's (18081) will therefore likely be unavailable. To continue, we need to assign ports to our account.
 
@@ -84,13 +84,17 @@ Next, head back to Mullvads website and navigate to your account page. Once here
 
 Mullvad offers us the ability to forward up to 5 ports. Click on the green button to add ports, do this at least twice.
 
-As you can see two items have appeared under "ACTIVE PORTS". Now that we have these two ports it's time to head back to our **bitmonero.conf** and change the default ports. The options are labelled `p2p-bind-port=` and `rpc-bind-port=`, replace the numbers which follow with the numbers given to you by Mullvad. Be sure to make a note of which ports you add to each option. You should then restart your daemon for these settings to take effect.
+As you can see a few items have appeared under "ACTIVE PORTS". Now that we have these ports it's time to head back to our **bitmonero.conf** and change the default ports. The options are labelled `p2p-bind-port=` and `rpc-bind-port=`, replace the numbers which follow with the numbers given to you by Mullvad. Be sure to make a note of which ports you add to each option. You should then restart your daemon for these settings to take effect.
 
 Finally, you need to add rules in your machines and routers firewall. Please follow the instructions from the second video; **Setting up your own node**.
 
-To connect to your node from outside your LAN your wallet software will require the port for RPC's and the IP address. You should already know your port number; to find our new IP address we can use Mullvads ["check" tool](https://mullvad.net/en/check/). This can be found by selecting "Check for leaks" at the top of Mullvads web page, once there, select the drop down menu with heading **Using Mullvad VPN** to reveal your external IP address.
+To connect to your node from outside your LAN your wallet software will require the port for RPC's and the IP address. You should already know your port number; to find our new IP address we can use the drop down menu in the Mullvad app. The IP address you need will be labeled "out".
 
-Be warned, depending on your configuration, these IP address may not be static and can change without warning. Be sure to check again if you are ever unable to access your node. In order to see how to add your node to Monerujo or Feather, please move on the the section called **Adding nodes to your wallet software**. If you're a Linux user, stay tuned for the Darknet approach.
+Be warned, depending on your configuration, these IP address may not be static and can change without warning. Be sure to check again if you are ever unable to access your node. In order to see how to add your node to Monerujo or Feather, please move on the the section called **Adding nodes to your wallet software**. 
+
+If you you had any problems with this process please double check you have your ports entered and forwarded correctly before reaching out.
+
+Now for the the Darknet approach.
 
 
 ### CONFIGURING YOUR NODE - DARKNET (LINUX)
