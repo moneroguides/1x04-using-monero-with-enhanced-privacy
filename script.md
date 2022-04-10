@@ -32,7 +32,7 @@ That moves us onto the second thing you can do, churning. Churning is the act of
 
 The "Coins" tab in Feather is great for managing both of these practices. To churn, simply right click on one of your owned outputs and select "Sweep output". When the new window opens, select "Send to self (churn)". **When using the send to self function, Feather will send that output to your primary address.**
 
-Another helpful feature of Feather wallet is the ability to freeze outputs. This is useful when you have multiple outputs from different sources in the same account. Freezing them prevents Featehr from using them when generating new transactions.
+Another helpful feature of Feather wallet is the ability to freeze outputs. This is useful when you have multiple outputs from different sources in the same account. Freezing them prevents Featehr from using them when generating new transactions. you will notice that the avilable balance in the tool bar has changed to reflect this.
 
 With these ideas in mind in addition to what was learnt in video three about account management, you now have a wide range of tools to increase your level of privacy when using the network.
 
@@ -66,7 +66,7 @@ If your have no reason to obfuscate your interactions with the Monero blockchain
 
 You will then need to discover your external IP address, which can most easily be done by visiting 3rd party sites such as those of VPN providers like [Mullvad](https://mullvad.net). Once you have done this, you have all the information you need to connect to your node.
 
-The rest of this section covers the use of VPN's, and specifically Mullvad, although the general ideas still apply to all providers.
+### USING A VPN - CLEARNET
 
 Using a VPN is equivalent to changing your ISP and depending on the service, you may gain some privacy enhancing features. In the last video we bought a subscription to [Mullvad](https://mullvad.net), a privacy focused VPN provider based in Sweden. We specifically chose Mullvad because we are able to configure multiple ports for use with our daemons and we were able to maintain some privacy when buying the subscription. 
 
