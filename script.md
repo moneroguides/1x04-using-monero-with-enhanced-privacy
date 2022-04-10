@@ -131,11 +131,11 @@ We now have all the information we need to connect to our node using Tor enabled
 
 Let's first take a look at Monerujo. Although at the time of making this video Monerujo is currently an Android only wallet, we recommend it due to its native Tor integration. Please note, that for the Tor functionality to be enabled you will also need to have [Orbot](https://guardianproject.info/apps/org.torproject.android/) installed.
 
-In order to add your node to the Monerujo, first select the current node. Once the list has loaded, you should see a + symbol in the bottom corner. Now we can enter our details. In the "Hostname" field you should enter your external IP address or onion address. Once you've done that you need to enter the port which has been assigned to RPCs.
+In order to add your node to Monerujo, first click on the network options. Once on the node selection menu, you should see a + symbol in the bottom corner. Here we can enter our details. In the "Hostname" field you should enter your external IP address or onion address. Once you've done that you need to enter the port which has been assigned to RPCs.
 
 You can name the node what ever you like and for now we will leave the "Username" and "Password" fields blank. With all of that information filled in we can now select test to make sure everything has been configured correctly. 
 
-If you have entered an onion address, this process may not work initially. Press ok to save your settings and then head back to the main menu. Click on the symbol need to the node name, once that's initialised, you should now see a little onion symbol, this means you are now using Tor to route your traffic. You can use Tor to connect to either Clearnet or Darknet nodes, but bare in mind Tor is much slower.
+If you have entered an onion address, this process may not work initially. Press ok to save your settings and then head back to the main menu. Click on the symbol next to the node name, once that's initialised, you should now see a little onion symbol, this means you are now using Tor to route your traffic. You can use Tor to connect to either Clearnet or Darknet nodes, but bare in mind Tor is much slower.
 
 The process for adding your node to Feather is fairly similar. Start by selecting "File" and the "Settings". Next, select the "Node" tab and then highlight "From custom list". You should then enter your IP or onion address followed by the port number.
 
