@@ -1,11 +1,13 @@
-### Prerequisites:
+# Getting to Grips with Monero - Using Monero with Enhanced Privacy
+
+## Prerequisites:
 
 * Feather wallet
 * Monerujo wallet
 * Mullvad credit
 * Tor (Linux)
 
-.....................................................
+<hr/>
 
 ### INTRO
 
@@ -28,15 +30,18 @@ The are two simple things we can do to reduce the risk imposed by these kinds of
 
 That moves us onto the second thing you can do, churning. Churning is the act of sending outputs to yourself. Churning increases the level of plausible deniability as each of those outputs will then be included in many more ring signatures than before. If you need to mix inputs the best thing to do is churn them before mixing.
 
-The "Coins" tab in Feather is great for managing both of these practices. To churn, simply right click on one of your owned outputs and select "Sweep output". When the new window opens, select "Send to self (churn)".
+The "Coins" tab in Feather is great for managing both of these practices. To churn, simply right click on one of your owned outputs and select "Sweep output". When the new window opens, select "Send to self (churn)". **When using the send to self function, Feather will send that output to your primary address.**
 
-With this two ideas in mind, you now have a way to further increase your level of privacy when using the network.
+Another helpful feature of Feather wallet is the ability to freeze outputs. This is useful when you have multiple outputs from different sources in the same account. Freezing them prevents Featehr from using them when generating new transactions.
+
+With these ideas in mind in addition to what was learnt in video three about account management, you now have a wide range of tools to increase your level of privacy when using the network.
+
 
 ### NETWORKING
 
 So far, we have only shown you how to connect to your own node from within your LAN. But what if you want to spend Monero whilst out shopping in town or on during your holidays? 
 
-Generally speaking, connecting to different nodes for one off payments is fine for maintaining privacy. Especially if your using either Feather or Monerujo, which both support The Onion Routing (Tor) Project. However, there have been several warnings throughout this series, particularly with regards to our network traffic.
+Generally speaking, connecting to different nodes for one off payments is fine for maintaining privacy. Especially if your using either Feather or Monerujo, which both support The Onion Routing (Tor) Project. However there have been several warnings throughout this series, particularly with regards to our network traffic.
 
 During the second video we covered the kind of information made available to both internet service providers (ISPs) and node operators. You should keep these things in mind when making decisions about your networking preferences.
 
@@ -51,9 +56,9 @@ Before we continue, it would be good to introduce two terms which you may not ha
 
 For those of you who followed the previous videos and were not able to host your own node; you are already using the Darknet via [Tor](https://www.torproject.org). Tor is a free and open-source software which increases anonymity and censorship resistance on the internet. If you are interested in learning more please visit the Tor project website.
 
-In the next sections we'll be demonstrating how to configure our nodes to accept RPC's from outside our LAN. Firstly using Clearnet and then Darknet, which is aimed at Linux users only.
+In the next sections we'll be demonstrating how to configure our nodes to accept RPC's from outside our LAN. Firstly using Clearnet and then Darknet, which is aimed only at Linux users.
 
-We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any. If you have any concerns or problems with port forwarding, we would recomend you aim to host your node over Tor, which does not require you to do this.
+We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any. If you have concerns or problems with port forwarding, we would recomend you aim to host your node over Tor, which does not require you to do this.
 
 ### CONFIGURING YOUR NODE - CLEARNET
 
