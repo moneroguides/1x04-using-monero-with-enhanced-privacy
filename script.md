@@ -105,7 +105,9 @@ In this section, we'll be help Linux users set up a hidden service, aka an [onio
 
 Although Tor is significantly slower than the Clearnet alternative, it is much more private. Onion addresses are not publicly available and are extremely difficult to guess.
 
-To continue with this part of the guide, you need to have Tor installed on the machine that hosts your node. Installation depends on your distribution and is not covered in this video. If you need help, please consult the [tor website](https://community.torproject.org/onion-services/setup/install/). After the installation process you should now have a dedicated service which starts with your machine each time. To check if it's running use the command `sudo systemctl status tor@default.service`.
+To continue with this part of the guide, you need to have Tor installed on the machine that hosts your node. Installation depends on your distribution and is not covered in this video. If you need help, please consult the [tor website](https://community.torproject.org/onion-services/setup/install/). After the installation process you should now have a dedicated service which starts with your machine each time. To check if it's running use the command `sudo systemctl status tor@default.service`. 
+
+Use `Ctrl + C` to exit.
 
 With Tor installed it's rather simple to set up a hidden service. This first thing you need to do is edit the Tor config file, which is typically located in the following directory: `/etc/tor/torrc`. If everything is well your status should show that it's active and running.
 
@@ -114,11 +116,11 @@ Using your favourite editor you need to add a few lines, which will define your 
 	HiddenServiceDir /var/lib/tor/monero-service/
 	HiddenServicePort 18081 127.0.0.1:18081
 
-Take note of the fact that the option **HiddenServicePort** is a redirect of the already existing service on your host PC. If you have changed the default port for RPC's then this line needs to change to reflect that.
+Take note of the fact that the option **HiddenServicePort** is a redirect of the already existing service on your host PC. If you have changed the default port for RPC's then this line needs to change to reflect that. You can also change the port on Tor to something else as well.
 
 We can now exit our editor, making sure to save our changes. For the changes to take effect we must restart Tor, which should now be running as a service. We can do this with the command: `sudo systemctl restart tor@default`
 
-Tor ensure Tor has started correctly and the settings have taken effect once again use the command: `sudo systemctl status tor@default.service`. 
+Tor ensure Tor has started correctly and the settings have taken effect once again use the command: `sudo systemctl status tor@default.service`. Once again, use `Ctrl + C` to exit.
 
 All that's left is to find out the hidden service address which has been issued by Tor. To print this information to the terminal we can use the concatenate command, along with the correct file location. The full command should look like this: `sudo cat /var/lib/tor/monero-service/hostname`.
 
