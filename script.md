@@ -129,7 +129,7 @@ We now have all the information we need to connect to our node using Tor enabled
 
 ### ADDING NODES TO YOUR WALLET SOFTWARE
 
-Let's first take a look at Monerujo. Although at the time of making this video Monerujo is currently an Android only wallet, we recommend it due to its native Tor integration. Please note, that for the Tor functionality to be enabled you will also need to have [Orbot](https://guardianproject.info/apps/org.torproject.android/) installed.
+Let's first take a look at Monerujo. Although at the time of making this video Monerujo is currently an Android only wallet, we are using it due to its simple Tor integration. Please note, that for the Tor functionality to be enabled you will also need to have [Orbot](https://guardianproject.info/apps/org.torproject.android/) installed.
 
 In order to add your node to Monerujo, first click on the network options. Once on the node selection menu, you should see a + symbol in the bottom corner. Here we can enter our details. In the "Hostname" field you should enter your external IP address or onion address. Once you've done that you need to enter the port which has been assigned to RPCs.
 
