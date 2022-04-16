@@ -1,4 +1,4 @@
-# Getting to Grips with Monero - Using Monero with Enhanced Privacy
+# Getting to Grips with Monero - Using Monero With Enhanced Privacy
 
 ## Prerequisites:
 
@@ -13,7 +13,7 @@
 
 This is the last in this four part series on "Getting to grips with Monero".
 
-In this video we're going to be exploring ways in which you can easily enhance your privacy as a Monero user. We'll be exploring both a few of different networking methods and account management practices.
+In this video we're going to be exploring ways in which you can easily enhance your privacy as a Monero user. We'll be exploring a few different networking methods and account management practices.
 
 Let's get into it.
 
@@ -26,26 +26,26 @@ Ring signatures aren't perfect as they only provide plausible deniability. Attac
 
 We won't be going into much detail so if you want to learn more about the attacks available to bad actors, please watch the [breaking Monero series](https://www.youtube.com/playlist?list=PLsSYUeVwrHBnAUre2G_LYDsdo-tD0ov-y).
 
-The are two simple things we can do to reduce the risk imposed by these kinds of attacks. The first is by reducing input mixing. Input mixing is where you use owned outputs with multiple origins to satisfy a new transaction. Mixing inputs increases the amount of information available to those who are interested and can once again be used in a statistic analysis. 
+There are two simple things we can do to reduce the risk imposed by these kinds of attacks. The first is by reducing input mixing. Input mixing is where you use owned outputs with multiple origins to satisfy a new transaction. Mixing inputs increases the amount of information available to those who are interested and can once again be used in a statistic analysis. 
 
 That moves us onto the second thing you can do, churning. Churning is the act of sending outputs to yourself. Churning increases the level of plausible deniability as each of those outputs will then be included in many more ring signatures than before. If you need to mix inputs the best thing to do is churn them before mixing.
 
 The "Coins" tab in Feather is great for managing both of these practices. To churn, simply right click on one of your owned outputs and select "Sweep output". When the new window opens, select "Send to self (churn)". **When using the send to self function, Feather will send that output to your primary address.**
 
-Another helpful feature of Feather wallet is the ability to freeze outputs. This is useful when you have multiple outputs from different sources in the same account. Freezing them prevents Featehr from using them when generating new transactions. you will notice that the avilable balance in the tool bar has changed to reflect this.
+Another helpful feature of Feather wallet is the ability to freeze outputs. This is useful when you have multiple outputs from different sources in the same account. Freezing them prevents Feather from using them when generating new transactions. You'll notice that the avilable balance in the tool bar has changed to reflect this.
 
 With these ideas in mind in addition to what was learnt in video three about account management, you now have a wide range of tools to increase your level of privacy when using the network.
 
 
 ### NETWORKING
 
-So far, we have only shown you how to connect to your own node from within your LAN. But what if you want to spend Monero whilst out shopping in town or on during your holidays? 
+So far, we have only shown you how to connect to your own node from within your LAN. But what if you want to spend Monero whilst out shopping in town or when you're on holiday? 
 
-Generally speaking, connecting to different nodes for one off payments is fine for maintaining privacy. Especially if your using either Feather or Monerujo, which both support The Onion Routing (Tor) Project. However there have been several warnings throughout this series, particularly with regards to our network traffic.
+Generally speaking, connecting to different nodes for one off payments is fine for maintaining privacy, especially if you're using either Feather or Monerujo which both support The Onion Routing (Tor) Project. However there have been several warnings throughout this series, particularly with regards to our network traffic.
 
 During the second video we covered the kind of information made available to both internet service providers (ISPs) and node operators. You should keep these things in mind when making decisions about your networking preferences.
 
-If your state has banned the use of Monero or you don't trust your ISP, you may want to manage this exposure and obfuscate your interactions with the Monero blockchain. Connecting to your own node through Tor or a VPN are the best methods for achieving this.
+If your state has banned the use of Monero or you don't trust your ISP, you may want to manage this exposure and obfuscate your interactions with the Monero blockchain. Connecting to your own node through Tor or a VPN is the best method for achieving this.
 
 Although we are primarily focused on privacy, there may be technical reasons for using a VPN or Tor. For example, your ISP may limit the use of port forwarding or you may not be able to access your router in an administrative capacity.
 
@@ -58,11 +58,11 @@ For those of you who followed the previous videos and were not able to host your
 
 In the next sections we'll be demonstrating how to configure our nodes to accept RPC's from outside our LAN. Firstly using Clearnet and then Darknet, which is aimed only at Linux users.
 
-We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any. If you have concerns or problems with port forwarding, we would recomend you aim to host your node over Tor, which does not require you to do this.
+We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any. If you have concerns or problems with port forwarding, we'd recomend you host your node over Tor, which does not require you to do this.
 
 ### CONFIGURING YOUR NODE - CLEARNET
 
-If your have no reason to obfuscate your interactions with the Monero blockchain and it's technically possible. All you need to do is add firewall rules to your router and the machine which hosts your node. The default port for RPC's is **18081**. If you haven't done so already, you should add them now using the guide from the second video; **Setting up your own node**.
+If you have no reason to obfuscate your interactions with the Monero blockchain (and your router supports it), all you need to do is add firewall rules to your router and the machine which hosts your node. The default port for RPC's is **18081**. If you haven't done so already, you should add them now using the guide from the second video; **Setting up your own node**.
 
 You will then need to discover your external IP address, which can most easily be done by visiting 3rd party sites such as those of VPN providers like [Mullvad](https://mullvad.net). Once you have done this, you have all the information you need to connect to your node.
 
@@ -70,9 +70,9 @@ You will then need to discover your external IP address, which can most easily b
 
 Using a VPN is equivalent to changing your ISP and depending on the service, you may gain some privacy enhancing features. In the last video we bought a subscription to [Mullvad](https://mullvad.net), a privacy focused VPN provider based in Sweden. We specifically chose Mullvad because we are able to configure multiple ports for use with our daemons and we were able to maintain some privacy when buying the subscription. 
 
-Let's get started by heading over the Mullvads web page and selecting "[Get started](https://mullvad.net/en/account/#/create/)".
+Let's get started by heading over to Mullvad's web page and selecting "[Get started](https://mullvad.net/en/account/#/create/)".
 
-Unlike services from Nord et al. which require you to provide email addresses and other personally identifying details, Mullvad uses account numbers. To generate an account number we should simply click on the button provided.
+Unlike services from Nord et al. which require you to provide email addresses and other personally identifying details, Mullvad uses account numbers. To generate an account number we can simply click on the button provided.
 
 Now that we have our number, it's time to add some credit to our account. As we already purchased some credit we can select the **voucher** option and enter the details there. The final thing to do is download the appropriate software for your OS and assign ports to your account. Don't forget to verify your donwloads, Mullvads public key along with their own guide can be found through the following [link](https://mullvad.net/en/help/verifying-signatures/) or by clicking "what is this?" on the downloads page.
 
@@ -86,13 +86,13 @@ Mullvad offers us the ability to forward up to 5 ports. Click on the green butto
 
 As you can see a few items have appeared under "ACTIVE PORTS". Now that we have these ports it's time to head back to our **bitmonero.conf** and change the default ports. The options are labelled `p2p-bind-port=` and `rpc-bind-port=`, replace the numbers which follow with the numbers given to you by Mullvad. Be sure to make a note of which ports you add to each option. You should then restart your daemon for these settings to take effect.
 
-Finally, you need to add rules in your machines and routers firewall. Please follow the instructions from the second video; **Setting up your own node**.
+Finally, you need to add rules in the firewalls of both your computer and router. Please follow the instructions from the second video: **Setting up your own node**.
 
 To connect to your node from outside your LAN your wallet software will require the port for RPC's and the IP address. You should already know your port number; to find our new IP address we can use the drop down menu in the Mullvad app. The IP address you need will be labeled "out".
 
 Be warned, depending on your configuration, these IP address may not be static and can change without warning. Be sure to check again if you are ever unable to access your node. In order to see how to add your node to Monerujo or Feather, please move on the the section called **Adding nodes to your wallet software**. 
 
-If you you had any problems with this process please double check you have your ports entered and forwarded correctly before reaching out.
+If you've had any problems with this process please double check you have your port numbers entered and forwarded correctly before reaching out.
 
 Now for the the Darknet approach.
 
