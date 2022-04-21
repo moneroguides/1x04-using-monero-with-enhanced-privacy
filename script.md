@@ -101,7 +101,7 @@ Now for the the Darknet approach.
 
 Welcome to the dark side. 
 
-In this section, we'll be help Linux users set up a hidden service, aka an [onion service](https://community.torproject.org/onion-services/). Hidden services are a convenient method of sharing local services on the internet. This is achieved by routing the traffic through tor and securing it with a private and complex addresses, which can be further secured using [authorisation methods](https://community.torproject.org/onion-services/advanced/client-auth/).
+In this section, we'll be helping Linux users set up a hidden service, aka an [onion service](https://community.torproject.org/onion-services/). Hidden services are a convenient method of sharing local services on the internet. This is achieved by routing the traffic through tor and securing it with a private and complex addresses, which can be further secured using [authorisation methods](https://community.torproject.org/onion-services/advanced/client-auth/).
 
 Although Tor is significantly slower than the Clearnet alternative, it is much more private. Onion addresses are not publicly available and are extremely difficult to guess.
 
@@ -109,7 +109,7 @@ To continue with this part of the guide, you need to have Tor installed on the m
 
 Use `Ctrl + C` to exit.
 
-With Tor installed it's rather simple to set up a hidden service. This first thing you need to do is edit the Tor config file, which is typically located in the following directory: `/etc/tor/torrc`. If everything is well your status should show that it's active and running.
+With Tor installed it's rather simple to set up a hidden service. The first thing you need to do is edit the Tor config file, which is typically located in the following directory: `/etc/tor/torrc`. If everything is well your status should show that it's active and running.
 
 Using your favourite editor you need to add a few lines, which will define your new service. I'm going to use [vim](https://www.vim.org/) and to enter the editing window I will use the command `sudo vim /etc/tor/torrc`, once that's done I will add the following lines:
 
@@ -120,7 +120,7 @@ Take note of the fact that the option **HiddenServicePort** is a redirect of the
 
 We can now exit our editor, making sure to save our changes. For the changes to take effect we must restart Tor, which should now be running as a service. We can do this with the command: `sudo systemctl restart tor@default`
 
-Tor ensure Tor has started correctly and the settings have taken effect once again use the command: `sudo systemctl status tor@default.service`. Once again, use `Ctrl + C` to exit.
+To ensure Tor has started correctly and the settings have taken effect once again use the command: `sudo systemctl status tor@default.service`. Once again, use `Ctrl + C` to exit.
 
 All that's left is to find out the hidden service address which has been issued by Tor. To print this information to the terminal we can use the concatenate command, along with the correct file location. The full command should look like this: `sudo cat /var/lib/tor/monero-service/hostname`.
 
@@ -129,7 +129,7 @@ We now have all the information we need to connect to our node using Tor enabled
 
 ### ADDING NODES TO YOUR WALLET SOFTWARE
 
-Let's first take a look at Monerujo. Although at the time of making this video Monerujo is currently an Android only wallet, we are using it due to its simple Tor integration. Please note, that for the Tor functionality to be enabled you will also need to have [Orbot](https://guardianproject.info/apps/org.torproject.android/) installed.
+Now that we've done that let's take a look at Monerujo. Although at the time of making this video Monerujo is currently an Android only wallet, we're using it due to its simple Tor integration. Please note, that for the Tor functionality to be enabled you will also need to have [Orbot](https://guardianproject.info/apps/org.torproject.android/) installed.
 
 In order to add your node to Monerujo, first click on the network options. Once on the node selection menu, you should see a + symbol in the bottom corner. Here we can enter our details. In the "Hostname" field you should enter your external IP address or onion address. Once you've done that you need to enter the port which has been assigned to RPCs.
 
@@ -144,20 +144,20 @@ Click "OK" when you're done and then double click on the node to connect to it. 
 
 ### PASSWORD PROTECTION
 
-As we have seen, it is possible to secure your RPC server with usernames and passwords. With this in place only those with a given username and password will hence be able to interact with the server. To enable this, we need to head back to our `bitmonero.conf` once more.
+As we've seen here, it's possible to secure your RPC server with usernames and passwords. With this in place only those with a given username and password will be able to interact with the server. To enable this, we need to head back to our `bitmonero.conf` once more.
 
-The flag for adding a username and password pair is as follows: `rpc-login=username:password`. This flag, along with many others can be found via the [Monerodocs webstie](https://monerodocs.org/interacting/monerod-reference/) which you may remember from the second video. With that line added, you should no restart your node for the settings to take effect.
+The flag for adding a username and password pair is as follows: `rpc-login=username:password`. This flag, along with many others can be found via the [Monerodocs website](https://monerodocs.org/interacting/monerod-reference/) which you may remember from the second video. With that line added, you should now restart your node for the settings to take effect.
 
 Adding a username and password can grant you a little peace of mind and helps to prevent others from abusing your server.
 
 ### WHAT NEXT?
 
-In the last few videos we covered a lot. It will take some time and practice for this information to be digested in it's entirety.
+In the last few videos we've covered a lot. Don't worry if it all still seems a bit strange, it will take some time and practice for this information to be digested in it's entirety.
 
-Please use these videos as a reference point for any further learning. The complete scripts for these videos are hosted on the [Monero Guides](https://www.moneroguides.org) website and are packed full of links to further reading and learning which we've point to throughout. For additional reading, both [Zero to Monero](https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf) and [Mastering Monero](https://masteringmonero.com/) offer a great level of detail and are very valuable resources.
+Please use these videos as a reference point for any further learning. The complete scripts for these videos are hosted on the [Monero Guides](https://www.moneroguides.org) website and are packed full of links to further reading which we've referenced throughout these guides. For additional reading, both [Zero to Monero](https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf) and [Mastering Monero](https://masteringmonero.com/) offer a great level of detail and are very valuable resources.
 
 We want to close by thanking you for staying tuned. We hope you now have the tools to both start and continue your journey with Monero.
 
-Goodbye for now
+So from us here at Monero Guides we wish you the best of luck on your adventures and look forward to seeing you again in future installments.
 
 ~moneroguides
