@@ -1,0 +1,51 @@
+Prerequisites:
+
+    Feather wallet
+    Monerujo wallet
+    Mullvad credit
+    Tor (Linux)
+
+.....................................................................
+
+0:00 INTRO
+0:29 COIN CONTROL 
+1:28 NETWORKING
+3:44 CONFIGURING YOUR NODE - CLEARNET
+5:01 USING A VPN - CLEARNET
+5:38 CONFIGURING YOUR NODE - DARKNET (LINUX)
+6:56 ADDING NODES TO YOUR WALLET SOFTWARE
+8:11 PASSWORD PROTECTION
+9:29 WHAT NEXT?
+
+.....................................................................
+
+systemctl status tor@default.service
+sudo vim /etc/tor/torrc
+HiddenServiceDir /var/lib/tor/monero-service/
+HiddenServicePort 18081 127.0.0.1:18081
+sudo systemctl restart tor@default
+systemctl status tor@default.service
+sudo cat /var/lib/tor/monero-service/hostname
+rpc-login=username:password
+
+.....................................................................
+
+Ring Signatures - https://www.getmonero.org/resources/moneropedia/ringsignatures.html
+Breaking Monero Series - https://www.youtube.com/playlist?list=PLsSYUeVwrHBnAUre2G_LYDsdo-tD0ov-y
+Clearnet Wiki - https://en.wikipedia.org/wiki/Clearnet_networking
+Darknet Wiki - https://en.wikipedia.org/wiki/Darknet
+Tor Project - https://www.torproject.org/
+Mullvad - https://mullvad.net/
+OpenVPN Wiki - https://en.wikipedia.org/wiki/OpenVPN
+WireGuard Wiki - https://en.wikipedia.org/wiki/WireGuard
+Tor Onion Service - https://community.torproject.org/onion-services/
+Onion Service Client Authorisation - https://community.torproject.org/onion-services/advanced/client-auth/
+Vim - https://www.vim.org/
+MoneroDocs reference - https://monerodocs.org/interacting/monerod-reference/
+Zero to Monero - https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf
+Mastering Monero - https://masteringmonero.com/
+
+.....................................................................
+
+All contents of this video are valid on release, please keep in mind that future updates of P2Pool may mean that some steps are no longer required.
+If enough of these changes occur a new video will be released.
