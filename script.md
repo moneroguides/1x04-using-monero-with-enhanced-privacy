@@ -32,7 +32,7 @@ That moves us onto the second thing you can do, churning. Churning is the act of
 
 The "Coins" tab in Feather is great for managing both of these practices. To churn, simply right click on one of your owned outputs and select "Sweep output". When the new window opens, select "Send to self (churn)". **When using the send to self function, Feather will send that output to your primary address.**
 
-Another helpful feature of Feather wallet is the ability to freeze outputs. This is useful when you have multiple outputs from different sources in the same account. Freezing them prevents Feather from using them when generating new transactions. You'll notice that the avilable balance in the tool bar has changed to reflect this.
+Another helpful feature of Feather wallet is the ability to freeze outputs. This is useful when you have multiple outputs from different sources in the same account. Freezing them prevents Feather from using them when generating new transactions. You'll notice that the available balance in the tool bar has changed to reflect this.
 
 With these ideas in mind in addition to what was learnt in video three about account management, you now have a wide range of tools to increase your level of privacy when using the network.
 
@@ -58,7 +58,7 @@ For those of you who followed the previous videos and were not able to host your
 
 In the next sections we'll be demonstrating how to configure our nodes to accept RPC's from outside our LAN. Firstly using Clearnet and then Darknet, which is aimed only at Linux users.
 
-We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any. If you have concerns or problems with port forwarding, we'd recomend you host your node over Tor, which does not require you to do this.
+We have one more warning before diving in. Opening ports comes with some risk, although we didn't issue a warning for the P2P networking, we will for RPC's. The risk of opening ports is normally tightly bound to the application that is being run through that port. Although there are no known vulnerabilities in the RPC implementation, it doesn't mean that there aren't any. If you have concerns or problems with port forwarding, we'd reccomend you host your node over Tor, which does not require you to do this.
 
 ### CONFIGURING YOUR NODE - CLEARNET
 
