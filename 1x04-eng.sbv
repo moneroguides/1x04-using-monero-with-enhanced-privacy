@@ -1,0 +1,840 @@
+0:00:05.174,0:00:10.991
+Hey there and welcome. This is the last in this four part series
+on "Getting to grips with Monero".
+
+0:00:10.991,0:00:15.110
+In this video we're going to be exploring
+ways in which you can easily enhance your
+
+0:00:15.110,0:00:17.232
+privacy as a Monero user.
+
+0:00:17.598,0:00:22.679
+We'll be exploring a few different networking
+methods and account management practices.
+
+0:00:22.801,0:00:24.285
+Let's get into it.
+
+0:00:30.032,0:00:33.637
+To begin we want continue on from the last
+video and introduce some
+
+0:00:33.637,0:00:36.457
+ privacy enhancing account practices.
+
+0:00:36.457,0:00:40.664
+We're going to start by introducing a new
+term: **ring signatures**.
+
+0:00:41.552,0:00:46.410
+Ring signatures are one of the key features
+of the Monero ecosystem which aims to anonymise
+
+0:00:46.410,0:00:48.516
+our transactions.
+
+0:00:48.516,0:00:52.867
+To learn more have a look at the Moneropedia
+entry.
+
+0:00:54.207,0:00:59.051
+Ring signatures aren't perfect as they only
+provide plausible deniability.
+
+0:00:59.051,0:01:03.640
+Attacks can exist where two or more colluding
+parties attempt to learn information about
+
+0:01:03.640,0:01:05.921
+someone they transact with.
+
+0:01:05.921,0:01:12.000
+They can do so by tracing transaction graphs
+and performing statistical tests.
+
+0:01:12.000,0:01:16.770
+This type of attack is especially effective
+against those who engage in repeated, uniform
+
+0:01:16.770,0:01:21.970
+transactions and also provide personally identifiable
+information.
+
+0:01:22.945,0:01:27.259
+We won't be going into much detail so if you
+want to learn more about the attacks available
+
+0:01:27.259,0:01:30.936
+to bad actors, please watch the breaking Monero
+series.
+
+0:01:31.439,0:01:34.084
+A link to which will be in the description.
+
+0:01:34.610,0:01:39.935
+There are two simple things we can do to reduce
+the risk imposed by these kinds of attacks.
+
+0:01:39.935,0:01:43.102
+The first is by reducing input mixing.
+
+0:01:43.102,0:01:49.849
+Input mixing is where you use owned outputs
+with multiple origins to satisfy a new transaction.
+
+0:01:49.849,0:01:55.119
+Mixing inputs increases the amount of information
+available to those who are interested and
+
+0:01:55.119,0:01:58.887
+can once again be used in a statistic analysis.
+
+0:01:58.887,0:02:02.867
+That moves us onto the second thing you can
+do, churning.
+
+0:02:02.867,0:02:06.000
+Churning is the act of sending outputs to
+yourself.
+
+0:02:06.000,0:02:11.030
+Churning increases the level of plausible
+deniability as each of those outputs will
+
+0:02:11.030,0:02:15.483
+then be included in many more ring signatures
+than before.
+
+0:02:15.483,0:02:20.640
+If you need to mix inputs the best thing to
+do is churn them before mixing.
+
+0:02:20.640,0:02:25.580
+The "Coins" tab in Feather is great for managing
+both of these practices.
+
+0:02:25.580,0:02:31.202
+To churn, simply right click on one of your
+owned outputs and select "Sweep output".
+
+0:02:31.603,0:02:35.450
+When the new window opens, select "Send to
+self (churn)".
+
+0:02:35.781,0:02:41.750
+**When using the send to self function, Feather
+will send that output to your primary address.**
+
+0:02:41.750,0:02:46.810
+Another helpful feature of Feather wallet
+is the ability to freeze outputs.
+
+0:02:46.810,0:02:52.733
+This is useful when you have multiple outputs
+from different sources in the same account.
+
+0:02:52.733,0:02:57.738
+Freezing them prevents Feather from using
+them when generating new transactions.
+
+0:02:57.738,0:03:03.136
+You'll notice that the available balance in
+the tool bar has changed to reflect this.
+
+0:03:03.136,0:03:08.840
+With these ideas in mind in addition to what
+was learnt in video three about account management,
+
+0:03:08.840,0:03:13.937
+you now have a wide range of tools to increase
+your level of privacy when using the network.
+
+0:03:19.440,0:03:24.530
+So far, we have only shown you how to connect
+to your own node from within your LAN.
+
+0:03:24.530,0:03:29.571
+But what if you want to spend Monero whilst
+out shopping in town or when you're on holiday?
+
+0:03:29.571,0:03:34.210
+Generally speaking, connecting to different
+nodes for one off payments is fine for maintaining
+
+0:03:34.210,0:03:39.474
+privacy, especially if you're using either
+Feather or Monerujo which both support The
+
+0:03:39.474,0:03:40.596
+Onion Routing (Tor) Project.
+
+0:03:40.596,0:03:45.180
+However there have been several warnings throughout
+this series, particularly with regards to
+
+0:03:45.180,0:03:46.720
+our network traffic.
+
+0:03:47.086,0:03:51.460
+During the second video we covered the kind
+of information made available to both internet
+
+0:03:51.460,0:03:54.910
+service providers (ISPs) and node operators.
+
+0:03:54.910,0:04:00.200
+You should keep these things in mind when
+making decisions about your networking preferences.
+
+0:04:00.200,0:04:05.190
+If your state has banned the use of Monero
+or you don't trust your ISP, you may want
+
+0:04:05.190,0:04:10.290
+to manage this exposure and obfuscate your
+interactions with the Monero blockchain.
+
+0:04:10.290,0:04:15.866
+Connecting to your own node through Tor or
+a VPN is the best method for achieving this.
+
+0:04:16.336,0:04:21.186
+Although we are primarily focused on privacy,
+there may be technical reasons for using a
+
+0:04:21.186,0:04:22.720
+VPN or Tor.
+
+0:04:22.720,0:04:27.770
+For example, your ISP may limit the use of
+port forwarding or you may not be able to
+
+0:04:27.770,0:04:31.247
+access your router in an administrative capacity.
+
+0:04:31.247,0:04:36.413
+Before we continue, it would be good to introduce
+two terms which you may not have come across before.
+
+0:04:36.821,0:04:40.530
+They are Clearnet and Darknet.
+
+0:04:40.530,0:04:45.532
+These terms have a well established history
+and can be be simply summarised in the following ways:
+
+0:04:46.396,0:04:51.974
+Clearnet - Publicly accessible Internet, the one that you use day to day
+
+0:04:52.078,0:04:59.889
+Darknet - Internet that can only be accessed
+with specific software, configurations, or authorisation,
+
+0:05:00.790,0:05:05.240
+For those of you who followed the previous
+videos and were not able to host your own
+
+0:05:05.240,0:05:09.389
+node; you are already using the Darknet via
+Tor.
+
+0:05:09.389,0:05:14.430
+Tor is a free and open-source software which
+increases anonymity and censorship resistance
+
+0:05:14.430,0:05:15.980
+on the internet.
+
+0:05:15.980,0:05:20.800
+If you are interested in learning more please
+visit the Tor project website.
+
+0:05:20.800,0:05:25.880
+In the next sections we'll be demonstrating
+how to configure our nodes to accept RPC's
+
+0:05:25.880,0:05:27.999
+from outside our LAN.
+
+0:05:27.999,0:05:33.000
+Firstly using Clearnet and then Darknet, which
+is aimed only at Linux users.
+
+0:05:33.599,0:05:36.230
+We have one more warning before diving in.
+
+0:05:36.230,0:05:42.260
+Opening ports comes with some risk, although
+we didn't issue a warning for the P2P networking,
+
+0:05:42.260,0:05:44.139
+we will for RPC's.
+
+0:05:44.139,0:05:48.889
+The risk of opening ports is normally tightly
+bound to the application that is being run
+
+0:05:48.889,0:05:49.948
+through that port.
+
+0:05:49.948,0:05:54.420
+Although there are no known vulnerabilities
+in the RPC implementation, it doesn't mean
+
+0:05:54.420,0:05:55.928
+that there aren't any.
+
+0:05:55.928,0:06:00.199
+If you have concerns or problems with port
+forwarding, we'd recommend you host your node
+
+0:06:00.199,0:06:03.317
+over Tor, which does not require you to do
+this.
+
+0:06:09.186,0:06:14.229
+If you have no reason to obfuscate your interactions
+with the Monero blockchain (and your router
+
+0:06:14.229,0:06:19.190
+supports it), all you need to do is add firewall
+rules to your router and the machine which
+
+0:06:19.190,0:06:20.843
+hosts your node.
+
+0:06:20.843,0:06:25.620
+The default port for RPC's is **18081**.
+
+0:06:25.620,0:06:29.600
+If you haven't done so already, you should
+add them now using the guide from the second
+
+0:06:29.600,0:06:31.990
+video; **Setting up your own node**.
+
+0:06:32.704,0:06:37.510
+You will then need to discover your external
+IP address, which can most easily be done
+
+0:06:37.510,0:06:42.828
+by visiting 3rd party sites such as those
+of VPN providers like Mullvad.
+
+0:06:42.828,0:06:46.865
+Once you have done this, you have all the
+information you need to connect to your node.
+
+0:06:52.490,0:06:57.550
+Using a VPN is equivalent to changing your
+ISP and depending on the service, you may
+
+0:06:57.550,0:07:00.326
+gain some privacy enhancing features.
+
+0:07:00.326,0:07:05.640
+In the last video we bought a subscription
+to Mullvad, a privacy focused VPN provider
+
+0:07:05.640,0:07:07.520
+based in Sweden.
+
+0:07:07.520,0:07:12.563
+We specifically chose Mullvad because we are
+able to configure multiple ports for use with
+
+0:07:12.563,0:07:17.806
+our daemons and we were able to maintain some
+privacy when buying the subscription.
+
+0:07:18.328,0:07:23.779
+Let's get started by heading over to Mullvad's
+web page and selecting "Get started".
+
+0:07:24.441,0:07:31.740
+Unlike services from Nord et al. which require
+you to provide email addresses and other personally
+
+0:07:31.740,0:07:35.919
+identifying details, Mullvad uses account
+numbers.
+
+0:07:35.919,0:07:40.389
+To generate an account number we can simply
+click on the button provided.
+
+0:07:40.389,0:07:44.860
+Now that we have our number, it's time to
+add some credit to our account.
+
+0:07:44.860,0:07:49.270
+As we already purchased some credit we can
+select the **voucher** option and enter the
+
+0:07:49.270,0:07:51.090
+details there.
+
+0:07:51.090,0:07:57.589
+The final thing to do is download the appropriate
+software for your OS and assign ports to your account.
+
+0:07:58.011,0:08:02.860
+Don't forget to verify your donwloads, Mullvads
+public key along with their own guide can
+
+0:08:02.860,0:08:08.649
+be found through the following link or by
+clicking "what is this?" on the downloads page.
+
+0:08:10.836,0:08:15.180
+As a VPN user the ports you have access to
+will be limited.
+
+0:08:15.180,0:08:23.620
+The default ports for P2P connections (18080)
+and RPC's (18081) will therefore likely be
+
+0:08:23.620,0:08:24.800
+unavailable.
+
+0:08:24.800,0:08:29.030
+To continue, we need to assign ports to our
+account.
+
+0:08:29.030,0:08:34.070
+Once logged in, choose a location and then
+a city using the drop down menu.
+
+0:08:34.070,0:08:38.479
+Now click on the settings icon and then select
+"Advanced".
+
+0:08:38.479,0:08:46.950
+There are two types of tunnelling protocols
+available through Mullvad, OpenVPN and WireGuard.
+
+0:08:46.950,0:08:50.899
+We suggest selecting WireGuard, but you are
+free to make your own choice.
+
+0:08:50.899,0:08:54.500
+If you're interested in the differences, please
+start with the links bellow.
+
+0:08:54.500,0:08:59.300
+Next, head back to Mullvads website and navigate
+to your account page.
+
+0:08:59.300,0:09:03.259
+Once here, select "Manage ports and WireGuard
+keys".
+
+0:09:03.259,0:09:08.639
+If you set your app to use WireGuard like
+us, you'll see your key displayed here.
+
+0:09:08.639,0:09:14.420
+Scroll down to the "Port forwarding" subheading,
+now select the city you chose within the app
+
+0:09:14.420,0:09:20.736
+and either the WireGuard key, or "No Key"
+for those of you using OpenVPN.
+
+0:09:20.736,0:09:25.119
+Mullvad offers us the ability to forward up
+to 5 ports.
+
+0:09:25.119,0:09:29.369
+Click on the green button to add ports, do
+this at least twice.
+
+0:09:29.369,0:09:33.889
+As you can see a few items have appeared under
+"ACTIVE PORTS".
+
+0:09:33.889,0:09:39.120
+Now that we have these ports it's time to
+head back to our **bitmonero.conf** and change
+
+0:09:39.120,0:09:41.360
+the default ports.
+
+0:09:41.360,0:09:48.910
+The options are labelled `p2p-bind-port=`
+and `rpc-bind-port=`, replace the numbers
+
+0:09:48.910,0:09:52.339
+which follow with the numbers given to you
+by Mullvad.
+
+0:09:52.339,0:09:56.389
+Be sure to make a note of which ports you
+add to each option.
+
+0:09:56.389,0:10:00.529
+You should then restart your daemon for these
+settings to take effect.
+
+0:10:00.790,0:10:06.569
+Finally, you need to add rules in the firewalls
+of both your computer and router.
+
+0:10:06.569,0:10:11.050
+Please follow the instructions from the second
+video: **Setting up your own node**.
+
+0:10:11.050,0:10:16.079
+To connect to your node from outside your
+LAN your wallet software will require the
+
+0:10:16.079,0:10:19.509
+port for RPC's and the IP address.
+
+0:10:19.509,0:10:24.619
+You should already know your port number;
+to find our new IP address we can use the
+
+0:10:24.619,0:10:27.369
+drop down menu in the Mullvad app.
+
+0:10:27.369,0:10:31.067
+The IP address you need will be labeled "out".
+
+0:10:31.067,0:10:36.649
+Be warned, depending on your configuration,
+these IP addresses may not be static and can
+
+0:10:36.649,0:10:38.709
+change without warning.
+
+0:10:38.709,0:10:43.170
+Be sure to check again if you are ever unable
+to access your node.
+
+0:10:43.170,0:10:48.679
+In order to see how to add your node to Monerujo
+or Feather, please move on the the section
+
+0:10:48.679,0:10:52.160
+called **Adding nodes to your wallet software**.
+
+0:10:52.160,0:10:56.829
+If you've had any problems with this process
+please double check you have your port numbers
+
+0:10:56.829,0:11:00.980
+entered and forwarded correctly before reaching
+out.
+
+0:11:00.980,0:11:02.750
+Now for the the Darknet approach.
+
+0:11:08.862,0:11:11.589
+Welcome to the dark side.
+
+0:11:11.589,0:11:17.661
+In this section, we'll be helping Linux users
+set up a hidden service, aka an onion service.
+
+0:11:17.661,0:11:22.749
+Hidden services are a convenient method of
+sharing local services on the internet.
+
+0:11:22.749,0:11:27.879
+This is achieved by routing the traffic through
+tor and securing it with a private and complex
+
+0:11:27.879,0:11:32.872
+address, which can be further secured using
+authorisation methods.
+
+0:11:32.872,0:11:38.735
+Although Tor is significantly slower than
+the Clearnet alternative, it is much more private.
+
+0:11:38.847,0:11:43.639
+Onion addresses are not publicly available
+and are extremely difficult to guess.
+
+0:11:43.639,0:11:47.300
+To continue with this part of the guide, you
+need to have Tor installed on the machine
+
+0:11:47.300,0:11:49.067
+that hosts your node.
+
+0:11:49.189,0:11:53.839
+Installation depends on your distribution
+and is not covered in this video.
+
+0:11:53.839,0:11:56.499
+If you need help, please consult the tor website.
+
+0:11:56.499,0:12:00.980
+After the installation process you should
+now have a dedicated service which starts
+
+0:12:00.980,0:12:02.870
+with your machine each time.
+
+0:12:02.870,0:12:07.559
+To check if it's running use the command on screen.
+
+0:12:07.559,0:12:09.529
+Use `Ctrl + C` to exit.
+
+0:12:09.529,0:12:13.949
+With Tor installed it's rather simple to set
+up a hidden service.
+
+0:12:13.949,0:12:18.480
+The first thing you need to do is edit the
+Tor config file, which is typically located
+
+0:12:18.480,0:12:21.000
+in the following directory: `/etc/tor/torrc`.
+
+0:12:21.000,0:12:25.470
+If everything is well your status should show
+that it's active and running.
+
+0:12:25.470,0:12:30.389
+Using your favourite editor you need to add
+a few lines, which will define your new service.
+
+0:12:30.389,0:12:34.470
+I'm going to use vim
+and to enter the editing window I will use
+
+0:12:34.470,0:12:42.559
+the command `sudo vim /etc/tor/torrc`, once
+that's done I will add the following lines
+
+0:12:46.320,0:12:52.850
+Take note of the fact that the option **HiddenServicePort**
+is a redirect of the already existing service
+
+0:12:52.850,0:12:54.837
+on your host PC.
+
+0:12:55.290,0:13:00.803
+If you have changed the default port for RPC's
+then this line needs to change to reflect that.
+
+0:13:01.759,0:13:05.299
+You can also change the port on Tor to something
+else as well.
+
+0:13:06.066,0:13:09.929
+We can now exit our editor, making sure to
+save our changes.
+
+0:13:10.521,0:13:16.075
+For the changes to take effect we must restart
+Tor, which should now be running as a service.
+
+0:13:16.911,0:13:19.773
+We can do this with the command that you see on screen
+
+0:13:20.627,0:13:25.670
+To ensure Tor has started correctly and the
+settings have taken effect once again use
+
+0:13:25.670,0:13:27.392
+the command: `sudo systemctl status tor@default.service`.
+
+0:13:27.653,0:13:30.338
+Once again, use `Ctrl + C` to exit.
+
+0:13:32.272,0:13:38.572
+All that's left is to find out the hidden
+service address which has been issued by Tor.
+
+0:13:38.572,0:13:43.319
+To print this information to the terminal
+we can use the concatenate command, along
+
+0:13:43.319,0:13:46.420
+with the correct file location.
+
+0:13:46.420,0:13:50.899
+The full command should look like this: `sudo
+cat /var/lib/tor/monero-service/hostname`.
+
+0:13:50.899,0:13:56.219
+We now have all the information we need to
+connect to our node using Tor enabled wallets.
+
+0:14:03.673,0:14:06.999
+Now that we've done that let's take a look
+at Monerujo.
+
+0:14:06.999,0:14:11.639
+Although at the time of making this video
+Monerujo is currently an Android only wallet,
+
+0:14:11.639,0:14:14.639
+we're using it due to its simple Tor integration.
+
+0:14:14.639,0:14:20.993
+Please note, that for the Tor functionality
+to be enabled you will also need to have Orbot installed.
+
+0:14:22.130,0:14:27.125
+In order to add your node to Monerujo, first
+click on the network options.
+
+0:14:27.125,0:14:32.230
+Once on the node selection menu, you should
+see a + symbol in the bottom corner.
+
+0:14:32.717,0:14:34.758
+Here we can enter our details.
+
+0:14:35.351,0:14:41.525
+In the "Hostname" field you should enter your
+external IP address or onion address.
+
+0:14:41.525,0:14:47.389
+Once you've done that you need to enter the
+port which has been assigned to RPCs.
+
+0:14:47.389,0:14:53.601
+You can name the node what ever you like and
+for now we will leave the "Username" and "Password" fields blank.
+
+0:14:54.591,0:14:59.480
+With all of that information filled in we
+can now select test to make sure everything
+
+0:14:59.480,0:15:01.910
+has been configured correctly.
+
+0:15:01.910,0:15:06.269
+If you have entered an onion address, this
+process may not work initially.
+
+0:15:06.269,0:15:11.509
+Press ok to save your settings and then head
+back to the main menu.
+
+0:15:11.509,0:15:16.040
+Click on the symbol next to the node name,
+once that's initialised, you should now see
+
+0:15:16.040,0:15:22.060
+a little onion symbol, this means you are
+now using Tor to route your traffic.
+
+0:15:22.060,0:15:27.799
+You can use Tor to connect to either Clearnet
+or Darknet nodes, but bare in mind Tor is
+
+0:15:27.799,0:15:29.645
+much slower.
+
+0:15:29.645,0:15:33.768
+The process for adding your node to Feather
+is fairly similar.
+
+0:15:33.768,0:15:37.419
+Start by selecting "File" and the "Settings".
+
+0:15:37.419,0:15:42.179
+Next, select the "Node" tab and then highlight
+"From custom list".
+
+0:15:42.283,0:15:47.529
+You should then enter your IP or onion address
+followed by the port number.
+
+0:15:47.529,0:15:52.316
+Click "OK" when you're done and then double
+click on the node to connect to it.
+
+0:15:52.996,0:15:59.084
+There you have it, you are now able to use
+your node from outside of your LAN.
+
+0:16:04.953,0:16:10.164
+You may have noticed that it's possible to
+secure your RPC server with usernames and passwords.
+
+0:16:11.129,0:16:17.173
+With this in place only those with a given
+username and password will be able to interact with the server.
+
+0:16:17.939,0:16:23.269
+To enable this, we need to head back to our
+`bitmonero.conf` once more.
+
+0:16:23.269,0:16:28.989
+The flag for adding a username and password
+pair is as follows: `rpc-login=username:password`.
+
+0:16:28.989,0:16:34.889
+This flag, along with many others can be found
+via the Monerodocs website which you may remember
+
+0:16:34.889,0:16:37.129
+from the second video.
+
+0:16:37.129,0:16:41.730
+With that line added, you should now restart
+your node for the settings to take effect.
+
+0:16:42.357,0:16:46.629
+Adding a username and password can grant you
+a little peace of mind and helps to prevent
+
+0:16:46.629,0:16:48.851
+others from abusing your server.
+
+0:16:54.755,0:16:57.809
+In the last few videos we've covered a lot.
+
+0:16:57.809,0:17:02.079
+Don't worry if it all still seems a bit strange,
+it will take some time and practice for this
+
+0:17:02.079,0:17:05.570
+information to be digested in it's entirety.
+
+0:17:05.570,0:17:09.320
+Please use these videos as a reference point
+for any further learning.
+
+0:17:09.320,0:17:13.730
+The complete scripts for these videos are
+hosted on the Monero Guides website and are
+
+0:17:13.730,0:17:18.950
+packed full of links to further reading which
+we've referenced throughout these guides.
+
+0:17:18.950,0:17:24.420
+For additional reading, both Zero to Monero
+and Mastering Monero offer a great level of
+
+0:17:24.420,0:17:27.699
+detail and are very valuable resources.
+
+0:17:29.040,0:17:32.080
+We want to close by thanking you for staying
+tuned.
+
+0:17:32.080,0:17:36.640
+We hope you now have the tools to both start
+and continue your journey with Monero.
+
+0:17:36.640,0:17:41.540
+So from us here at Monero Guides we wish you
+the best of luck on your adventures and look
+
+0:17:41.540,0:17:45.210
+forward to seeing you again in future installments.
+
+0:17:45.785,0:17:47.104
+~moneroguides
