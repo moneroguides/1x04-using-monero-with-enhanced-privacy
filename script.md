@@ -101,7 +101,7 @@ Now for the the Darknet approach.
 
 Welcome to the dark side. 
 
-In this section, we'll be helping Linux users set up a hidden service, aka an [onion service](https://community.torproject.org/onion-services/). Hidden services are a convenient method of sharing local services on the internet. This is achieved by routing the traffic through tor and securing it with a private and complex addresses, which can be further secured using [authorisation methods](https://community.torproject.org/onion-services/advanced/client-auth/).
+You may have found yourself here, either because you are unable to access your router in an administrative capacity, or you lack trust for your Sate and ISP.
 
 Although Tor is significantly slower than the Clearnet alternative, it is much more private. Onion addresses are not publicly available and are extremely difficult to guess.
 
@@ -113,6 +113,8 @@ Use `Ctrl + C` to exit.
 
 
 ### CREATING YOUR OWN ONION SERVICE
+
+In this section, we'll be helping Linux users set up a hidden service, aka an [onion service](https://community.torproject.org/onion-services/). Hidden services are a convenient method of sharing local services on the internet. This is achieved by routing the traffic through tor and securing it with a private and complex addresses, which can be further secured using [authorisation methods](https://community.torproject.org/onion-services/advanced/client-auth/).
 
 With Tor installed it's rather simple to set up a hidden service. The first thing you need to do is edit the Tor config file, which is typically located in the following directory: `/etc/tor/torrc`. If everything is well your status should show that it's active and running.
 
