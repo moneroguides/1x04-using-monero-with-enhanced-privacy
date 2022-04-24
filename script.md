@@ -109,6 +109,11 @@ To continue with this part of the guide, you need to have Tor installed on the m
 
 Use `Ctrl + C` to exit.
 
+### FORWARDING P2P TRAFFIC OVER TOR
+
+
+### CREATING YOUR OWN ONION SERVICE
+
 With Tor installed it's rather simple to set up a hidden service. The first thing you need to do is edit the Tor config file, which is typically located in the following directory: `/etc/tor/torrc`. If everything is well your status should show that it's active and running.
 
 Using your favourite editor you need to add a few lines, which will define your new service. I'm going to use [vim](https://www.vim.org/) and to enter the editing window I will use the command `sudo vim /etc/tor/torrc`, once that's done I will add the following lines:
