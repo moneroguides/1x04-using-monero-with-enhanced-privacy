@@ -140,7 +140,7 @@ add-priority-node=ozeavjybjbxbvmfcpxzjcn4zklbgohjwwndzenjt44pypvx6jisy74id.onion
 add-priority-node=xcccrsxi2zknef6zl3sviasqg4xnlkh5k3xqu7ytwkpfli3huyfvsjid.onion:18083
 
 # Tor: tell monerod your onion address so it can be advertised on P2P network
-anonymous-inbound=PASTE_YOUR_ONION_HOSTNAME:18083,127.0.0.1:18083,64
+anonymous-inbound=PASTE_YOUR_ONION_HOSTNAME:18089,127.0.0.1:18089,64
 ```
 
 ### CREATING YOUR OWN ONION SERVICE
