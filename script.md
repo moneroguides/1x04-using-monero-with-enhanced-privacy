@@ -123,6 +123,8 @@ Once that's done, we just need to save the config and run our nodes.
 
 You should bare in mind is that Tor is not perfect and most of the hazards exist when traversing between the darknet to the clearnet. This is however, a simple way to inhance your privacy and prevent your State or ISP from easily identifying your use of the Monero network.
 
+Also note worthy; if you are syncing the blockchain from scratch this way, you will be waiting a very long time!
+
 After that's done, the next thing to do is make your RPC server availble over Tor. To do that, we're going to be setting up a hidden service. 
 
 
