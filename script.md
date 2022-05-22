@@ -105,45 +105,24 @@ You may have found yourself here, either because you are unable to access your r
 
 Although Tor is significantly slower than the Clearnet alternative, it is much more private. Onion addresses are not publicly available and are extremely difficult to guess.
 
-To continue with this part of the guide, you need to have Tor installed on the machine that hosts your node. Installation depends on your distribution and is not covered in this video. If you need help, please consult the [tor website](https://community.torproject.org/onion-services/setup/install/). After the installation process you should now have a dedicated service which starts with your machine each time. To check if it's running use the command `sudo systemctl status tor@default.service`. 
+To continue with this part of the guide, you need to have Tor installed on the machine that hosts your node. Installation depends on your distribution and is not covered in this video. If you need help, please consult the [tor website](https://community.torproject.org/onion-services/setup/install/). After the installation process you should now have a dedicated service which is managed by "systemd". To check if it's running use the command `sudo systemctl status tor@default.service`. 
 
-Use `Ctrl + C` to exit.
+After checking that it is active and running, use `Ctrl + C` to exit.
 
-### FORWARDING P2P TRAFFIC OVER TOR
+### FORWARDING P2P TRAFFIC OVER TOR (LINUX)
 
-```
-#P2P
-p2p-ignore-ipv4=1
+The first thing we're going to want to do is make sure that all our Monero related traffic is run over Tor. To do this we need to add the `proxy` flag to our configuration files.
 
-# Tor: broadcast transactions originating from connected wallets over Tor (does not concern relayed transactions)
-tx-proxy=tor,127.0.0.1:9050,16
+This should be followed by a space, your local ip address and then the default port which is `9050`, `proxy 127.0.0.1:9050`.
 
-# Tor: add P2P seed nodes for the Tor network
-# For an up-to-date list of working nodes see https://www.ditatompel.com/monero/node-peers
-add-peer=4egylyolrzsk6rskorqvocipdo4tqqoyzxnplbjorns7issmgpoxvtyd.onion:18083
-add-peer=fagmobguo6u4z4b2ghyg3jegcdpmd4qj4wxkhemph5d5q6dltllveqyd.onion:18083
-add-peer=monerokdwzyuml7vfp73fjx5277lzesbrq4nvbl3r3t5ctgodsx34vid.onion:18089
-add-peer=b75obarnhi42p7js7wgzo7v3wtiwcgf4bknrwv6ihatop77jivrtwpid.onion:15892
-add-peer=5nvd6jbefgto3u74nzzdkcsbqgxyzrkk7bz5qupsdqg4gbuj5valiaqd.onion:18083
-add-peer=ozeavjybjbxbvmfcpxzjcn4zklbgohjwwndzenjt44pypvx6jisy74id.onion:18083
-add-peer=xcccrsxi2zknef6zl3sviasqg4xnlkh5k3xqu7ytwkpfli3huyfvsjid.onion:18083
+Once that's done, we just need to save the config and run our nodes.
 
-# Make the seed nodes permanent to fix monerod issue of not maintaining enough connections,
-# based on this reddit comment:
-# https://www.reddit.com/r/monerosupport/comments/k3m3x2/comment/ge5ehcy/?utm_source=share&utm_medium=web2x&context=3
-add-priority-node=4egylyolrzsk6rskorqvocipdo4tqqoyzxnplbjorns7issmgpoxvtyd.onion:18083
-add-priority-node=fagmobguo6u4z4b2ghyg3jegcdpmd4qj4wxkhemph5d5q6dltllveqyd.onion:18083
-add-priority-node=monerokdwzyuml7vfp73fjx5277lzesbrq4nvbl3r3t5ctgodsx34vid.onion:18089
-add-priority-node=b75obarnhi42p7js7wgzo7v3wtiwcgf4bknrwv6ihatop77jivrtwpid.onion:15892
-add-priority-node=5nvd6jbefgto3u74nzzdkcsbqgxyzrkk7bz5qupsdqg4gbuj5valiaqd.onion:18083
-add-priority-node=ozeavjybjbxbvmfcpxzjcn4zklbgohjwwndzenjt44pypvx6jisy74id.onion:18083
-add-priority-node=xcccrsxi2zknef6zl3sviasqg4xnlkh5k3xqu7ytwkpfli3huyfvsjid.onion:18083
+One thing to bare in mind is that Tor is not perfect and most of the hazards exist when trversing between the darknet to the clearnet. At some point, your node still has to communicate with the clearnet via an exit relay whilst using this configuration.
 
-# Tor: tell monerod your onion address so it can be advertised on P2P network
-anonymous-inbound=PASTE_YOUR_ONION_HOSTNAME:18089,127.0.0.1:18089,64
-```
+After that's done, the next thing to do is make your RPC server availble over Tor. 
 
-### CREATING YOUR OWN ONION SERVICE
+
+### CREATING YOUR OWN ONION SERVICE (LINUX)
 
 In this section, we'll be helping Linux users set up a hidden service, aka an [onion service](https://community.torproject.org/onion-services/). Hidden services are a convenient method of sharing local services on the internet. This is achieved by routing the traffic through tor and securing it with a private and complex addresses, which can be further secured using [authorisation methods](https://community.torproject.org/onion-services/advanced/client-auth/).
 
