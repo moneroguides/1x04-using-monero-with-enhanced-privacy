@@ -115,7 +115,7 @@ The first thing we're going to want to do is make sure that all our Monero relat
 
 I'm going to add this under the section titled 'P2P full node'. This should be followed by a space, your local ip address and then the default port which is `9050`; `proxy 127.0.0.1:9050`. 
 
-Next I'm going to change IP address after the 'p2p-bind-ip' flag, so that it matches the proxy IP.
+Next I'm going to change IP address after the `p2p-bind-ip` flag, so that it matches the proxy IP.
 
 Lastly, we're going to remove or comment out the 'confirm-external-bind=1' line from the underneath the 'RPC open node' heading.
 
