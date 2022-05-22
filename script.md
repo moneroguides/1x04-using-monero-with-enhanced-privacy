@@ -115,10 +115,6 @@ The first thing we're going to want to do is make sure that all our Monero relat
 
 I'm going to add this under the section titled 'P2P full node'. This should be followed by `=` and then your local ip address and the default port which is `9050`; `proxy=127.0.0.1:9050`. 
 
-Next I'm going to change IP address after the `p2p-bind-ip` flag, so that it matches the proxy IP.
-
-Lastly, we're going to remove or comment out the `rpc-bind-ip` and `confirm-external-bind=1` lines from the underneath the 'RPC open node' heading.
-
 Once that's done, we just need to save the config and run our nodes.
 
 You should bare in mind is that Tor is not perfect and most of the hazards exist when traversing between the darknet to the clearnet. This is however, a simple way to inhance your privacy and prevent your State or ISP from easily identifying your use of the Monero network.
