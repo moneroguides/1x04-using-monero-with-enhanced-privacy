@@ -109,7 +109,24 @@ To continue with this part of the guide, you need to have Tor installed on the m
 
 After checking that it is active and running, use `Ctrl + C` to exit.
 
-### FORWARDING P2P TRAFFIC OVER TOR (LINUX)
+### CONFIGURING YOUR NODE - DARKNET (LINUX)
+
+First, download and install the Tor Browser Bundle for Windows
+
+    Go into the Browser\TorBrowser\ directory
+    You should see a "Tor" folder in this directory
+    While holding down the "Shift" key, right click the "Tor" folder
+    Select "Open command window here"
+    
+This will open the Windows CLI already in the context of the C:\Tor Browser\Browser\TorBrowser\Tor\ directory (or wherever you have installed the Tor Browser).
+
+Now enter the following command to instruct tor.exe to install a Windows Service:
+
+`c:\Tor Browser\Browser\TorBrowser\Tor> tor.exe –service install`
+
+That's it - now you are running Tor as a service on Windows.
+
+### FORWARDING P2P TRAFFIC OVER TOR
 
 The first thing we're going to want to do is make sure that all our Monero related traffic is run over Tor. To do this we need to add the `proxy` flag to our configuration files.
 
@@ -124,11 +141,11 @@ Also note worthy; if you are syncing the blockchain from scratch this way, you w
 After that's done, the next thing to do is make your RPC server availble over Tor. To do that, we're going to be setting up a hidden service. 
 
 
-### CREATING YOUR OWN ONION SERVICE (LINUX)
+### CREATING YOUR OWN ONION SERVICE
 
-In this section, we'll be helping Linux users set up a hidden service, aka an [onion service](https://community.torproject.org/onion-services/). Hidden services are a convenient method of sharing local services on the internet. This is achieved by routing the traffic through tor and securing it with a private and complex addresses, which can be further secured using [authorisation methods](https://community.torproject.org/onion-services/advanced/client-auth/).
+In this section, we'll be helping users set up a hidden service, aka an [onion service](https://community.torproject.org/onion-services/). Hidden services are a convenient method of sharing local services on the internet. This is achieved by routing the traffic through tor and securing it with a private and complex addresses, which can be further secured using [authorisation methods](https://community.torproject.org/onion-services/advanced/client-auth/).
 
-With Tor installed it's rather simple to set up a hidden service. The first thing you need to do is edit the Tor config file, which is typically located in the following directory: `/etc/tor/torrc`. If everything is well your status should show that it's active and running.
+With Tor installed it's rather simple to set up a hidden service. The first thing you need to do is edit the Tor config file, which is typically located in the following directory for Linux users: `/etc/tor/torrc` and `Data/Tor/torrc` for windows users.
 
 Using your favourite editor you need to add a few lines, which will define your new service. I'm going to use [vim](https://www.vim.org/) and to enter the editing window I will use the command `sudo vim /etc/tor/torrc`, once that's done I will add the following lines:
 
