@@ -5,7 +5,7 @@
 * Feather wallet
 * Monerujo wallet
 * Mullvad credit
-* Tor (Linux)
+* Tor
 
 <hr/>
 
