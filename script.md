@@ -105,13 +105,13 @@ You may have found yourself here, either because you are unable to access your r
 
 Although Tor is significantly slower than the Clearnet alternative, it is much more private. Onion addresses are not publicly available and are extremely difficult to guess.
 
-To continue with this part of the guide, you need to have Tor installed on the machine that hosts your node. Installation depends on your distribution and is not covered in this video. If you need help, please consult the [tor website](https://community.torproject.org/onion-services/setup/install/). After the installation process you should now have a dedicated service which is managed by "systemd". To check if it's running use the command `sudo systemctl status tor@default.service`. 
+To continue with this part of the guide, you need to have Tor installed on the machine that hosts your node. Installation depends on your OS and distribution and is not covered in this video. If you need help, please consult the [tor website](https://community.torproject.org/onion-services/setup/install/). After the installation process you should now have a dedicated service which is managed by "systemd". To check if it's running use the command `sudo systemctl status tor@default.service`. 
 
 After checking that it is active and running, use `Ctrl + C` to exit.
 
-### CONFIGURING YOUR NODE - DARKNET (LINUX)
+### CONFIGURING YOUR NODE - DARKNET (Windows)
 
-First, download and install the Tor Browser Bundle for Windows
+First, download and install the Tor [Expert Bundle for Windows](https://www.torproject.org/download/tor/)
 
     Go into the Browser\TorBrowser\ directory
     You should see a "Tor" folder in this directory
